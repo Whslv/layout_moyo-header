@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif, Arial;
   font-weight: 500;
 }
 
@@ -22,9 +22,7 @@ body {
 }
 
 .nav {
-  /*   display: flex;
-  margin-left: auto;
- */
+  display: flex;
 }
 
 .nav_list {
