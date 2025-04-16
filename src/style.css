@@ -1,16 +1,16 @@
-* {
+body {
   margin: 0;
   font-family: Roboto, sans-serif;
   font-weight: 500;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --color-main: #00acdc;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
   padding: 0 50px;
   align-items: center;
   background-color: #fff;
@@ -22,20 +22,21 @@ body {
 }
 
 .nav {
-  display: flex;
+  /*   display: flex;
   margin-left: auto;
+ */
 }
 
 .nav_list {
   display: flex;
   font-size: 12px;
   padding: 0;
-  gap: 20px;
-  justify-self: space-between;
+  margin: 0;
   list-style: none;
 }
 
 .nav__item {
+  margin-left: 20px;
   position: relative;
 }
 
@@ -47,13 +48,17 @@ body {
   text-transform: uppercase;
 }
 
-.nav__item:hover a {
-  color: #00acdc;
+.nav__item:first-child {
+  margin-left: 0;
 }
 
-a.is-active {
+.nav__item:hover a {
+  color: var(--color-main);
+}
+
+.is-active {
   position: relative;
-  color: #00acdc;
+  color: var(--color-main);
 }
 
 .is-active::after {
@@ -65,5 +70,5 @@ a.is-active {
   height: 4px;
   width: 100%;
   border-radius: 2px;
-  background-color: #00acdc;
+  background-color: var(--color-main);
 }
